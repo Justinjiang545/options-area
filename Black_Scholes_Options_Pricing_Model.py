@@ -3,8 +3,18 @@ import numpy as np
 import scipy.stats as si
 import matplotlib.pyplot as plt
 import seaborn as sns
+import streamlit as st
+from streamlit_navigation_bar import st_navbar
+import streamlit_shadcn_ui as ui
 
-st.set_page_config(layout="wide")
+st.set_page_config(
+    layout="wide",
+    page_title="Black-Scholes Options Pricing Model"
+    )
+
+
+
+
 
 def black_scholes_call_put(S, K, T, r, sigma):
     if toggleTime:
@@ -125,3 +135,5 @@ with col2:
     ax_put.set_title("Put Prices")
     plt.tight_layout()
     st.pyplot(fig_put)
+
+
