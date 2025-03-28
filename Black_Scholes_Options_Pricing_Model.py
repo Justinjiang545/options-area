@@ -5,7 +5,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
 from streamlit_navigation_bar import st_navbar
-import streamlit_shadcn_ui as ui
 
 st.set_page_config(
     layout="wide",
